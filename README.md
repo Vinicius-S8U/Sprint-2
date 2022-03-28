@@ -7,4 +7,4 @@ Regras de Comprometimento
 5.	 Estar disposto a prover suporte aos integrantes do grupo
 6.	 Ao trabalhar com arquivos do git hub realizar o pull antes de dar um push
 7.	 Não fazer se ser ouvido
-8.	 Aviso prévio sobre qualquer atualização no git hub
+8.	 Aviso prévio sobre qualquer atualização no git hub.
