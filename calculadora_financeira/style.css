@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Header and Navbar */
+
+.header {
+    background-color: #f7f3f3;
+    color: #D10007;
+    border-bottom: 3px solid #01d60b;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e01818;
+    }
+
+.new {
+    font-weight: 900;
+}
+/* --------------------------- */
+ 
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: #753a22;
+    background-size: cover;
+}
+
+.banner .container {
+    height: 500px;
+    display: flex;
+    color: white;
+    align-items:center;
+}
+
+.banner .container.simulador{
+    justify-content: flex-end;
+}
+
+.card{
+    background-color: #E5E5E5;
+    color:#e01818;
+    width: 420px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;    
+}
+
+.card h4{
+    margin: 0;
+    padding: 0;
+}
+input {
+    margin-top: 8px;
+    outline: 3px solid #03ca1e;
+    border: 0;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.inputs{
+    display:flex;
+    flex-direction: column;
+    margin-top: 24px;
+    width: 250px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #2C9A0C;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 10px;
+    align-self: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #27850b;
+    cursor: pointer;
+}
+
+.resultado {
+    font-size: 15px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #f7f3f3;
+    color: #000000;
+}
+
+.footer .container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Output javascrpt teste*/
+
+.output_perda{
+    color: #D10007;
+}
