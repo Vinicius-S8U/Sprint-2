@@ -3,47 +3,31 @@ body {
     padding: 0;
     font-family: sans-serif;
 }
-/* Header and Navbar */
+/* Header*/
 
 .header {
-    background-color: #f7f3f3;
-    color: #D10007;
-    border-bottom: 3px solid #01d60b;
+    background-color: #faf6f5;
+    color: #753a22;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-.header .container {
     display: flex;
-    justify-content: space-between;
-    align-items:center;
 }
-
-.navbar {
-    display: flex;
-    list-style: none;
-    width: 400px;
-    justify-content: space-around;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #e01818;
-    }
 
 .new {
     font-weight: 900;
 }
 /* --------------------------- */
  
+/* Banner */
 .banner {
     display: flex;
     justify-content: center;
-    background-color: #753a22;
+    background-color: #E5E5E5;
     background-size: cover;
+    padding: 50px 50px;
 }
 
 .banner .container {
@@ -57,48 +41,58 @@ body {
     justify-content: flex-end;
 }
 
+/* -------------------------------- */
+
 .card{
-    background-color: #E5E5E5;
-    color:#e01818;
-    width: 420px;
-    height: 450px;
+    background-color: #ffffff;
+    color:#753a22;
+    border: 2px solid #753a22;
+    width: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
-    border-radius: 20px;    
+    justify-content: flex-start;
+    border-radius: 30px;    
+}
+
+.card h1 {
+    margin-left: 30px;
+    align-self: flex-start;
 }
 
 .card h4{
-    margin: 0;
-    padding: 0;
-}
-input {
-    margin-top: 8px;
-    outline: 3px solid #03ca1e;
-    border: 0;
-    padding: 8px;
-    border-radius: 10px;
+    margin: 5px;
+    margin-left: 40px;
+    color: #000000;
+    font-weight: lighter;
+    font-size: large;
+    align-self: flex-start;
 }
 
-.inputs{
-    display:flex;
-    flex-direction: column;
-    margin-top: 24px;
-    width: 250px;
+input {
+    margin-top: 8px;
+    outline: 2px solid #753a22;
+    background-color: #E5E5E5;
+    border: 0;
+    padding: 8px;
+    border-radius: 20px;
+    width: 80%;
+    font-size: larger;
 }
 
 button {
-    margin-top: 15px;
-    background-color: #2C9A0C;
+    margin-top: 60px;
+    background-color: #753a22;
     color: white;
+    width: 50%;
     border-radius: 10px;
     font-size: 18px;
     padding: 10px 10px;
     align-self: center;
     font-size: 18px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor:pointer;
 }
 
@@ -125,8 +119,54 @@ button:hover{
     justify-content: center;
 }
 
-/* Output javascrpt teste*/
+/* Output javascrpt*/
 
-.output_perda{
+.card .output_javascript {
+    display: flex;
+    flex-direction: column;
+}
+
+.output_javascript {
+    margin: 0;
+    padding: 0;
+}
+
+.output_resultado {
+    display: flex;
+    flex-direction: column;
+}
+
+.output_resultado p {
+    margin: 20px;
+    font-weight: 700;
+}
+
+.output_perda {
     color: #D10007;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.output_producao {
+    color: #361E0B;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.output_ganho {
+    color:#361E0B;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.output_estimativa {
+    color:  #2C9A0C;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.output_reducao {
+    color: #2C9A0C;
+    font-weight: bold;
+    border-bottom: 1px solid;
 }

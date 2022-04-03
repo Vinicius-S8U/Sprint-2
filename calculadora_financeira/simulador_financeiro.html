@@ -13,22 +13,17 @@
 <body>
     <div class="header">
         <div class="container">
+            <a href="#"><img src="imgs/voltar.jpeg" alt="back"></a>
             <h1>E-coffee</h1>
-            <ul class="navbar">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Simulador</a></li>
-                <li><a class="new" href="login.html">Login</a></li>
-                <li><a href="#">Cadastro</a></li>
-            </ul>
         </div>
     </div>
     <div class="banner">
         <div class="container simulador">
             <div class="card" id="container_output">
-                <h1>Simulador Financeiro</h1>
-                    <h4>Quantidade total de plantas de café:</h4> <input type="text" id="qnt_total_planta"><br><br>
-                    <h4>Quantidade total de sacas produzidas:</h4> <input type="text" id="qnt_total_sacas"><br><br>
-                    <h4>Preço de cada saca:</h4> <input type="number" id="preco_saca">
+                <h1>Calculadora Financeira</h1>
+                    <h4>Quantidade total de plantas de café</h4> <input type="text" id="qnt_total_planta"><br><br>
+                    <h4>Quantidade total de sacas produzidas</h4> <input type="text" id="qnt_total_sacas"><br><br>
+                    <h4>Valor da saca</h4> <input type="number" id="preco_saca">
                     <button onclick="calcular()">Calcular</button>
                 <div id="resultado"></div>
             </div>
