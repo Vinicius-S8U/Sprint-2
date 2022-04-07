@@ -1,0 +1,115 @@
+body{
+    background-color: #f7f3f3;
+}
+.banner{
+    width: 50%;
+    float: left;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .contenier.login{
+    margin: auto;    
+}
+
+.card{
+    background-color: #ffff;
+    color: #4b3621;
+    width: 384px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #753A2280;
+    border-radius: 40px;
+}
+
+.card h1{
+    font-family: Red Hat Display;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: 0em;
+    margin-top: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+form label {
+    margin-top: 20px;
+    
+}
+
+form input{
+    outline: 2px solid #753A22;
+    border: 0;
+    padding: 8px;
+    border-radius: 40px;
+    
+}
+
+ 
+form #emailInput {
+    margin-bottom: 25px;
+}
+/*#emailnput::plachedoder{
+    color: red;
+    text-align: center;*/
+}
+
+ form p{
+     color: #753A22;
+    margin-top: 0px;
+    text-align: right;
+    display: block;
+    margin-bottom: 25px;
+}
+
+form #entra{
+    border: 3px solid #753A22;
+    border-radius: 13px;
+    background-color: #753A22;
+    color: #ffff;
+    width: 120px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+form #cadastro{
+    border: 3px solid #87994B;
+    border-radius: 13px;
+    background-color: white;
+    color: #87994B;
+    width: 120px;
+    height: 32px;  
+    float: right;
+    cursor: pointer;
+}
+
+.aside{
+    width: 50%;
+    float: left;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    color: #753A22;
+}
+
+.aside h1{
+
+font-size: 80px;
+font-weight: 800;
+line-height: 106px;
+letter-spacing: 0em;
+text-align: left;
+margin: auto;
+}
+
