@@ -6,18 +6,41 @@ body {
 /* Header*/
 
 .header {
-    background-color: #faf6f5;
+    background-color: #E5E5E5;
     color: #753a22;
+    border-bottom: 3px solid #361E0B;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    display: flex;
 }
 
-.new {
-    font-weight: 900;
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #361E0B;
+}
+
+a .now {
+    font-weight: bold;
+}
+
+.now {
+    height: 15px;
+    font-weight: bold;
 }
 /* --------------------------- */
  
@@ -26,8 +49,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: #E5E5E5;
-    background-size: cover;
-    padding: 50px 50px;
+    height: 80vh;
+    padding: 15vh 5vh;
 }
 
 .banner .container {
