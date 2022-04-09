@@ -1,6 +1,50 @@
 body{
     background-color: #f7f3f3;
+    font-family: sans-serif;
 }
+/* Header */
+
+.header {
+    background-color: #E5E5E5;
+    color: #753a22;
+    border-bottom: 3px solid #361E0B;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #361E0B;
+}
+
+a .now {
+    font-weight: bold;
+}
+
+.now {
+    height: 15px;
+    font-weight: bold;
+}
+
+/* ------------------------ */
+
+/* Banner */
 .banner{
     width: 50%;
     float: left;
@@ -54,17 +98,16 @@ form input{
     
 }
 
- 
 form #emailInput {
     margin-bottom: 25px;
 }
 /*#emailnput::plachedoder{
     color: red;
-    text-align: center;*/
-}
+    text-align: center;
+ } */
 
  form p{
-     color: #753A22;
+    color: #753A22;
     margin-top: 0px;
     text-align: right;
     display: block;
@@ -80,7 +123,6 @@ form #entra{
     height: 32px;
     text-align: center;
     cursor: pointer;
-
 }
 
 form #cadastro{
@@ -104,12 +146,11 @@ form #cadastro{
 }
 
 .aside h1{
-
-font-size: 80px;
-font-weight: 800;
-line-height: 106px;
-letter-spacing: 0em;
-text-align: left;
-margin: auto;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 106px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: auto;
 }
 

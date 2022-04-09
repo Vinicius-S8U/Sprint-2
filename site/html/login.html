@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="projeto-login.css">
-    
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="banner">
+    <div class="header">
+        <div class="container">
+            <h1>E-coffee</h1>
+            <ul class="navbar">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="../html/simulador.html">Simulador</a></li>
+                <li><a class="now" href="../html/login.html"><img src="../imgs/grao-de-cafe.png" class="now">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner_login">
         <div class="contenier login">
-            <div class="card">
+            <div class="card_login">
                 <h1>Entrar</h1>
                 <form>
                     <label for="emailInput"></label>
@@ -22,7 +31,7 @@
                     <label for="senhaInput"></label>
                     <input type="password'" id="senhaInput" placeholder="Senha">
                     <p>Esqueceu a senha?</p>
-                    <div id="button-container">
+                    <div class="button_login" id="button-container">
                         <button id="entra" type="button">
                             Entrar
                         </button>
@@ -36,6 +45,11 @@
     </div>
     <div class="aside">
         <h1>E-coffee</h1>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <h4>footer</h4>
+        </div>
     </div>
 </body>
 

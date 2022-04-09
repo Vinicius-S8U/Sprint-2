@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f7f3f3;
     font-family: sans-serif;
 }
 /* Header*/
@@ -45,28 +46,41 @@ a .now {
 /* --------------------------- */
  
 /* Banner */
-.banner {
+
+.banner_simulador {
     display: flex;
     justify-content: center;
-    background-color: #E5E5E5;
     height: 80vh;
     padding: 15vh 5vh;
 }
 
-.banner .container {
+.banner_login {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    float: left;
+    height: 600px;
+}
+
+.banner_simulador .container {
     height: 500px;
     display: flex;
-    color: white;
+    /* color: white; */
     align-items:center;
 }
 
-.banner .container.simulador{
+.banner_simulador .container.simulador {
     justify-content: flex-end;
 }
 
+.banner_login .contenier.login {
+    margin: auto;    
+}
 /* -------------------------------- */
 
-.card{
+/* Cards  */
+
+.card_simulador {
     background-color: #ffffff;
     color:#753a22;
     border: 2px solid #753a22;
@@ -79,18 +93,40 @@ a .now {
     border-radius: 30px;    
 }
 
-.card h1 {
+.card_login {
+    background-color: #ffffff;
+    color: #4b3621;
+    width: 384px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #753A2280;
+    border-radius: 40px;
+}
+
+.card_simulador h1 {
     margin-left: 30px;
     align-self: flex-start;
 }
 
-.card h4{
+.card_simulador h4 {
     margin: 5px;
     margin-left: 40px;
     color: #000000;
     font-weight: lighter;
     font-size: large;
     align-self: flex-start;
+}
+
+.card_login h1 {
+    font-family: Hat Display;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: 0em;
+    margin-top: 0px;
 }
 
 input {
@@ -104,7 +140,7 @@ input {
     font-size: larger;
 }
 
-button {
+.button_simulador {
     margin-top: 60px;
     background-color: #753a22;
     color: white;
@@ -128,10 +164,88 @@ button:hover{
     font-size: 15px;
 }
 
+/* ------------------------- */
+
+/* Login */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+form label {
+    margin-top: 20px;
+}
+
+form input{
+    outline: 2px solid #753A22;
+    border: 0;
+    padding: 8px;
+    border-radius: 40px;
+}
+
+form #emailInput {
+    margin-bottom: 25px;
+}
+
+form p{
+    color: #753A22;
+    margin-top: 0;
+    text-align: right;
+    display: block;
+    margin-bottom: 25px;
+}
+
+form #entra{
+   border: 3px solid #753A22;
+   border-radius: 13px;
+   background-color: #753A22;
+   color: #ffff;
+   width: 120px;
+   height: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+form #cadastro{
+   border: 3px solid #87994B;
+   border-radius: 13px;
+   background-color: white;
+   color: #87994B;
+   width: 120px;
+   height: 32px; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   float: right;
+   cursor: pointer;
+}
+
+.aside{
+   width: 50%;
+   float: left;
+   height: 600px;
+   display:flex;
+   justify-content: center;
+   color: #753A22;
+}
+
+.aside h1{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 106px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: auto;
+}
+
 /* Footer */
 
 .footer {
-    background-color: #f7f3f3;
+    background-color: #E5E5E5;
     color: #000000;
 }
 
@@ -144,7 +258,7 @@ button:hover{
 
 /* Output javascrpt*/
 
-.card .output_javascript {
+.card_simulador .output_javascript {
     display: flex;
     flex-direction: column;
 }
