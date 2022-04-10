@@ -1,0 +1,183 @@
+body{
+    font-family:'Red Hat Display';
+    margin: 0;
+    padding:0;
+}
+
+.tela1{
+    background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
+    background-size: cover;
+}
+
+.header{
+    color: white;
+}
+
+.container{
+    width:80%;
+    margin: auto;
+}
+
+img{
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+h1{
+    margin-right: 42%;
+
+}
+
+.agora {
+    text-decoration:none;
+    font-weight: bolder;
+    color: #2C1408 !important; 
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+}
+
+.navbar{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+
+}
+
+.slogan{
+    height: 570px;
+    display:flex;
+    color:white;
+    width: 539px;
+}
+
+.slogan p{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top:22%;
+    margin-left:25%;
+}
+
+/*Tela 2*/
+
+.tela2{
+    background-color: #fbf8f9;
+}
+
+.background2{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sobre{
+    margin-left: 111px;
+    align-items: center;
+    
+}
+
+.titulo{
+    font-weight:bolder;
+    font-size: 40px;
+    margin-top: 30%;
+}
+.descricao{
+    font-size:28px;
+    width: 500px;
+    height: 335px;
+}
+
+#imagem-sobre-nos{
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 500px ;
+    height: 581px;
+    display:flex;
+}
+
+/*Serviços*/
+
+.tela3{
+    background: url(./../imgs/site-institucional/background/Mancha-Direita.png) no-repeat right top,
+    url(./../imgs/site-institucional/background/Mancha-Esquerda.png) no-repeat left bottom;
+    background-color: #fbf8f9;
+    
+
+}
+.servicos{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.titulo-servicos{
+    font-size: 60px;
+    font-weight: bold;
+}
+.descricao-servicos{
+    font-size: 40px;
+    margin-left: 190px;
+    text-align:center;
+    width:1000px;
+}
+
+.box-servicos{
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+    width:1046px;
+    height:393px;
+    border-radius: 40px;
+    border: 2px solid rgba(50,50,50,0.2);
+
+}
+
+.imagem-box{
+    width:345px;
+    height:385px;
+    margin-left:45px;
+}
+
+.sombra-imagem-box{
+    width:477px;
+    height:393px;
+    border-radius:40px;
+    background-color: rgba(160, 97,106, 0.04)
+
+}
+
+.titulo-box{
+    font-weight: bolder;
+    font-size: 50px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+}
+
+.descricao-box{
+    width: 524px;
+    font-size:26px;
+    font-weight:300, light;
+    text-align: center;
+    line-height: 34px;
+}
+
+.icon-box{
+    float:right;
+
+}
+
