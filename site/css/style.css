@@ -7,8 +7,8 @@ body {
 /* Header*/
 
 .header {
-    background-color: #E5E5E5;
-    color: #753a22;
+    background-color: #753a22;
+    color: #FFFFFF;
     border-bottom: 3px solid #361E0B;
 }
 
@@ -32,17 +32,16 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #361E0B;
-}
+    color: #FFFFFF;
+    font-size: 20px;
+}   
 
-a .now {
-    font-weight: bold;
-}
-
-.now {
+.now_img {
     height: 15px;
-    font-weight: bold;
+    margin-right: 5px;
+    font-weight: bolder;
 }
+
 /* --------------------------- */
  
 /* Banner */

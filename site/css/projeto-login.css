@@ -31,6 +31,7 @@ body{
 .navbar a {
     text-decoration: none;
     color: #361E0B;
+    font-size: 20px;
 }
 
 a .now {

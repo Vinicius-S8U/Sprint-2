@@ -4,18 +4,73 @@ body{
     padding:0;
 }
 
+/* Header */
+
 .tela1{
     background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
     background-size: cover;
 }
 
-.header{
+h1{
+    margin-right: 40%;
+}
+
+.now{
+    text-decoration:none;
+    font-weight: bold;
+    color: #2C1408; 
+}
+
+.header {
+    background-color: #753a22;
+    color: #FFFFFF;
+    border-bottom: 3px solid #361E0B;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}   
+
+.now_img {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+
+
+/* .header{
     color: white;
 }
 
 .container{
     width:80%;
     margin: auto;
+} 
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
 }
 
 img{
@@ -24,36 +79,22 @@ img{
     height: 60px;
 }
 
-h1{
-    margin-right: 42%;
-
-}
-
-.now {
-    text-decoration:none;
-    font-weight: bolder;
-    color: #2C1408 !important; 
-}
-
-.header .container{
-    display:flex;
-    justify-content:space-between;
-}
-
 .navbar{
     display: flex;
     width: 400px;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
+
 }
 
 .navbar a{
     text-decoration: none;
     color: white;
-    font-weight:bold;
     font-size: 20px;
+} */
 
-}
+/* --------------------------- */
 
 .slogan{
     height: 570px;
