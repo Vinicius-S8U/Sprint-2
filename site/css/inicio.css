@@ -9,6 +9,8 @@ body{
 .tela1{
     background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
     background-size: cover;
+    height: 640px;
+    width: 100%;
 }
 
 h1{
@@ -219,6 +221,8 @@ img{
 
 .icon-box{
     float:right;
+    width:87px;
+    height:87px;
 
 }
 
