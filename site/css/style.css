@@ -12,6 +12,7 @@ body {
     border-bottom: 3px solid #361E0B;
 }
 
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -54,11 +55,11 @@ body {
 }
 
 .banner_login {
-    display: flex;
-    justify-content: center;
     width: 50%;
     float: left;
     height: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .banner_simulador .container {
@@ -93,7 +94,7 @@ body {
 }
 
 .card_login {
-    background-color: #ffffff;
+    background-color: #ffff;
     color: #4b3621;
     width: 384px;
     height: 376px;
@@ -120,7 +121,6 @@ body {
 }
 
 .card_login h1 {
-    font-family: Hat Display;
     font-size: 42px;
     font-weight: 800;
     line-height: 56px;
@@ -169,7 +169,7 @@ button:hover{
 
 form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     width: 270px;
 }
 
@@ -180,7 +180,7 @@ form label {
 form input{
     outline: 2px solid #753A22;
     border: 0;
-    padding: 8px;
+    padding: 8px; 
     border-radius: 40px;
 }
 
@@ -190,40 +190,35 @@ form #emailInput {
 
 form p{
     color: #753A22;
-    margin-top: 0;
+    margin-top: 0px;
     text-align: right;
     display: block;
     margin-bottom: 25px;
 }
 
 form #entra{
-   border: 3px solid #753A22;
-   border-radius: 13px;
-   background-color: #753A22;
-   color: #ffff;
-   width: 120px;
-   height: 32px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
+    border: 3px solid #753A22;
+    border-radius: 13px;
+    background-color: #753A22;
+    color: #ffff;
+    width: 120px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
 }
 
 form #cadastro{
-   border: 3px solid #87994B;
-   border-radius: 13px;
-   background-color: white;
-   color: #87994B;
-   width: 120px;
-   height: 32px; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   float: right;
-   cursor: pointer;
+    border: 3px solid #87994B;
+    border-radius: 13px;
+    background-color: white;
+    color: #87994B;
+    width: 120px;
+    height: 32px;  
+    float: right;
+    cursor: pointer;
 }
 
-.aside{
+/*.aside{
    width: 50%;
    float: left;
    height: 600px;
@@ -239,7 +234,7 @@ form #cadastro{
     letter-spacing: 0em;
     text-align: left;
     margin: auto;
-}
+}*/
 
 /* Footer */
 
