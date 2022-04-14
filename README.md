@@ -6,5 +6,5 @@ Regras de Comprometimento
 4.	 Fazer o possível para cumprir os prazos estipulados pela equipe
 5.	 Estar disposto a prover suporte aos integrantes do grupo
 6.	 Ao trabalhar com arquivos do git hub realizar o pull antes de dar um push
-7.	 Não fazer se ser ouvido
+7.	 Falar e saber ouvir
 8.	 Aviso prévio sobre qualquer atualização no git hub.
