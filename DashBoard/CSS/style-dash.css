@@ -4,7 +4,7 @@ body{
  background-color: #e6d6c4;
  font-family: 'Red Hat Display', sans-serif; 
 }
-
+/* Header e seus elementos */
 .header_dash{ 
 display: flex;
 border-bottom: solid 2px black;
@@ -37,6 +37,11 @@ background-color: #753a22;
 #menu_icon{
  height: 60px;   
 }
+
+
+
+
+/* Secção 1 da pagina (Gráficos e "monitores de desempenho") */
 
 #section1_dash{
 height: 65vh;
@@ -134,6 +139,10 @@ border-radius: 20px;
 
 
 
+
+
+/* Botões do header */
+
 #menuUser{
  display: none;
  position: fixed;
@@ -191,6 +200,10 @@ border:solid 2px radius;
 border-radius: 240px;
 
 }
+
+
+/* Titulo Relatorio e Select */
+
 #Titulo_h2{
   height: 100px;
   width: 90%;
@@ -200,6 +213,11 @@ margin: auto;
 border-bottom:solid 0.1px black;
 align-items: center;
 font-size: 24px;
+
+
+
+
+/* secção 2 da pagina (relatório) */
 
 
 }
