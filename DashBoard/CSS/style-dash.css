@@ -1,15 +1,19 @@
 body{
  margin: 0px;
  padding: 0px;
- background-color: #e6d6c4;
+ background-color: #fbf8f9;
  font-family: 'Red Hat Display', sans-serif; 
 }
 /* Header e seus elementos */
 .header_dash{ 
 display: flex;
-border-bottom: solid 2px black;
+border-bottom: solid 3px #361E0B;
 height:85px;
 background-color: #753a22;
+}
+
+.titulo_dash{
+  color: #753a22;
 }
 
 .container_dash{
@@ -31,11 +35,10 @@ background-color: #753a22;
 
 #user_icon{
  height: 40px;
- background-color: whitesmoke;
 }
 
 #menu_icon{
- height: 60px;   
+ height: 35px;   
 }
 
 
@@ -63,11 +66,11 @@ width: 50%;
 }
 
 #div_grafico{
- 
-  height: 50%;
-  width: 90%; 
-  border: solid 2px black;
-  border-radius: 18px;
+  height: 311px;
+  width: 100%; 
+  padding: 8px;
+  border: solid 3px #976B59;
+  border-radius: 40px;
   background-color: #ffff;
    
 }
@@ -75,10 +78,11 @@ width: 50%;
 
 
 .Grafico_Principal{
- height: 50%;
- width: 90%; 
- border: solid 2px black;
- border-radius: 18px;
+  width: 100%; 
+ height: 311px;
+ padding: 8px;
+ border: solid 3px #976B59;
+ border-radius: 40px;
  background-color: #ffff;
  margin-top: 10px;
 
@@ -87,10 +91,11 @@ width: 50%;
 .Situação_Grafico{
   height: 11%;
   width: 250px;
-  background-color: #f9f7f7;
+  padding: 6px;
+  background-color: #ffff;
   margin-top: 10px;
-  border:solid 1px black;
-  border-radius: 30px;
+  border:solid 3px #976B59;
+  border-radius: 40px;
   padding: 30px;
   margin-left: 15%;
   display: flex;
@@ -102,10 +107,10 @@ width: 50%;
 .Situação_Grafico2{
   height: 11%;
   width: 250px;
-  background-color: #f9f7f7;
+  background-color: #ffff;
   margin-top: 10px;
-  border:solid 1px black;
-  border-radius: 30px;
+  border:solid 3px #976B59;
+  border-radius: 40px;
   padding: 30px;
   margin-left: 15%;
   display: flex;
@@ -210,17 +215,20 @@ border-radius: 240px;
   display: flex;
 justify-content: space-between;
 margin: auto;
-border-bottom:solid 0.1px black;
+border-bottom:solid 0.1px #753a22;
 align-items: center;
 font-size: 24px;
+}
 
+#Titulo_h2 h2{
+  color:#753a22;
+}
 
 
 
 /* secção 2 da pagina (relatório) */
 
 
-}
 
 #section2_dash{
 height: 30vh;
@@ -232,11 +240,11 @@ justify-content: space-around;
 }
 
 #RelatorioAlertas{
-  background-color: #f9f7f7;
+  background-color: #ffff;
   height: 175px;
   width: 325px;
-  border: 1px solid black;
-  border-radius: 20px;
+  border: 3px solid #976B59;
+  border-radius: 40px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -251,9 +259,9 @@ margin-left: 15px;
 .relatorio{
   height: 150px;
   width: 325px;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color:#f9f7f7;
+  border: 3px solid #976B59;
+  border-radius: 40px;
+  background-color:#ffff;
   padding: 15px;
   display: flex;
   flex-direction: column;
