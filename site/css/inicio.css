@@ -27,6 +27,9 @@ h1{
     background-color: #753a22;
     color: #FFFFFF;
     border-bottom: 3px solid #361E0B;
+    display: flex;
+    align-items: center;
+    height: 10vh;
 }
 
 .container {

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="CSS/style-dash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src = "Script/Script.js"></script>
+</head>
+<body>
+    
+<!-- Header ou Cabeçalho -->
+
+<header class="header_dash">
+<div class="container_dash">
+
+<input type="image" src="https://icon-library.com/images/white-menu-icon-png/white-menu-icon-png-18.jpg" id="menu_icon" onclick="menuFunction()">
+
+<img src = "img/imagem_2022-04-14_234004436-removebg-preview.png" id = "logo_dash">
+  
+<input type="image" src="img/user.png" id="user_icon" onclick = "userFunction()">
+
+</div>
+</header>
+
+<!-- h1 de dashboard e o select -->
+
+<div id = "barra_dash">
+
+<h1>DashBoard </h1>
+
+<select class = "select_dash" id ="select_dash_sense" onchange="select_sensor()">
+<option value = "S1">Sensor 1</option>
+<option value="S2">Sensor 2 </option>
+<option value="S3">Sensor 3</option>
+</select>
+
+</div>
+
+<!-- Secção 1 da página Gráfico Principal de temp e umidade -->
+
+<section id="section1_dash">
+
+<div class="paidosg">
+
+<div id = "div_grafico" >
+
+  <canvas id="GraficoP" height="100%" ></canvas> 
+
+</div>
+
+   <div class="Situação_Grafico2">
+   <span id = "Temp_atual">Temperatura atual do Sensor: <b>20.7</b></span>
+   </div>
+
+   <div class="Situação_Grafico">
+
+    <span id = "Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
+    <br>
+    
+    
+    <br>
+    <span id = "Condicao_sensor" > Condição da conexão: <b>Estável</b></span>
+    
+    </div>
+
+</div>
+
+
+<div id = "div_pai_dash">
+
+  <div class="Situação_Grafico2">
+
+    <span id = "Umi_atual">Umidade atual do Sensor: <b>79.3</b></span> 
+
+  </div>
+ 
+  <div class="Situação_Grafico">
+ 
+     <span id = "Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
+     <br>
+     
+     
+     <br>
+     <span id = "Condicao_sensor" > Condição da conexão: <b>Estável</b></span>
+  </div>
+
+  <div class = "Grafico_Principal">
+    <canvas id="GraficoU" height="100%" ></canvas>
+  </div>
+</div>
+
+</section>
+
+<div id = "Titulo_h2">
+  <h2>Relatório </h2>
+ 
+ <select class = "select_dash" id = "select_dashD" onchange="select_relatorio()">
+ <option value = "Dia">Dia</option>
+ <option value = "Semana">Semana</option>
+ <option value = "mes">Mês</option>
+  
+ </select>
+
+  </div>
+
+<!-- Secção 2 da pagina Relatorio sobre as informações coletadas do sensor-->
+
+<section id = "section2_dash">
+
+
+
+
+
+  <div id = "RelatorioAlertas">
+    <h3 id ="qtd_alertas">Você teve 18 alertas pertinentes</h3>
+  
+    <span id = "alerta1">Você teve 6 alerta às 12:00 </span>
+ 
+    <span id = "alerta2">Você teve 2 alerta às 02:00 </span>
+
+    <span id = "alerta3">Você teve 4 alerta às 01:00 </span>
+
+    <span id = "alerta4">Você teve 2 alerta às 04:00 </span>
+
+    <span id = "alerta5">Você teve 4 outros alertas </span>
+
+    </div>
+
+
+    <div class = "relatorio">
+      <span id="Temp_min"><p>Temperatura Minima do Dia :12.2 </p></span>
+      <span id="Temp_med" ><p>Temperatura Média do Dia :22.2 </p></span>
+      <span id="Temp_max" ><p>Temperatura Máxima do Dia :30.0 </p><br></span>
+     </div>
+    
+     <div class="relatorio">
+      <span id="Umid_min"><p>Umidade Minima do Dia :60.3 </p></span>
+      <span id="Umid_med"><p>Umidade Média do Dia :75.0 </p></span>
+      <span id="Umid_max"><p>Umidade Máxima do Dia :80.2</p></span>
+    
+     </div>
+    
+</section>
+
+
+<!-- Menu vertical no botão de user  e no botão menu -->
+
+<div id ="menuUser">
+    <div class="content_user">
+      Username:BigShu<br>
+
+    <br>Email:hahhfd@gmail.com<br>
+
+
+    <br><a href="" >Deslogar</a>
+
+    </div>
+</div>
+
+<div id = "Funcionalidade">
+   <div class="content_func">
+     <a href=""> Principal</a>
+    <a href=""> Secundário </a>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script  src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  
+  /* <!-- função do node (Gráfico) --> */
+
+
+  const labels = [
+      '01:00',
+      '02:00',
+      '03:00',
+      '04:00',
+      '05:00',
+      '06:00',
+    ];
+  
+const Temperatura = {
+labels: labels,
+datasets:
+[{
+   label: 'Temperatura',
+   backgroundColor: 'rgb(255,0,0)',
+   borderColor: 'rgb(255,0,0)',
+   data: [12,14,14,15,14,17],
+  }]
+};
+
+const Umidade = {
+  labels: labels,
+  datasets:
+[{    
+  label: 'Umidade',
+  backgroundColor: 'rgb(0,0,255)',
+  borderColor: 'rgb(0,0,255)',
+  data: [80, 82, 80, 85, 80, 83],
+  }]
+  };
+
+const config = {
+type: 'line',
+data: Temperatura,
+options: {}
+};
+
+const config2 = {
+type: 'line',
+data: Umidade,
+options: {}
+};
+
+
+const chart = new Chart(
+document.getElementById('GraficoP'),
+config
+);
+
+const chart2 = new Chart(
+document.getElementById('GraficoU'),
+config2
+);
+    
+
+/* função dos selects de mudar a data do sensor */
+
+
+function select_sensor(){
+  
+
+if(select_dash_sense.value == "S2"){
+  chart.data.datasets[0].data = [10, 12, 14, 15, 16 ,17];
+  chart.update();
+
+  chart2.data.datasets[0].data = [70, 75, 73, 74, 72 ,71];
+  chart2.update();
+}
+else if (select_dash_sense.value == "S3"){
+  chart.data.datasets[0].data = [11, 11, 13, 12, 14 ,15];
+  chart.update();
+
+  chart2.data.datasets[0].data = [74, 78, 80, 73, 75 ,72];
+  chart2.update();
+}
+else{
+  chart.data.datasets[0].data = [12,14,14,15,14,17];
+  chart.update();
+
+  chart2.data.datasets[0].data = [80, 82, 80, 85, 80, 83];
+  chart2.update();
+}
+
+
+}
+
+</script>
+

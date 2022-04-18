@@ -10,6 +10,9 @@ body {
     background-color: #753a22;
     color: #FFFFFF;
     border-bottom: 3px solid #361E0B;
+    height: 10vh;
+    display: flex;
+    align-items: center;
     /* position: fixed;
     top: 0;
     width: 100%; */
@@ -68,7 +71,8 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 600px;
+    height: 80vh;
+    padding: 3vh;
 }
 
 .banner_simulador .container {
@@ -369,11 +373,12 @@ form #cadastro:hover{
 
 .banner_cadastro {
     background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
-    padding-top: 5px;
+    height: 95vh;
+    align-items: center;
 }
 
 .card_cadastro {
@@ -381,7 +386,7 @@ form #cadastro:hover{
     background-color: #ffffff;
     color: #4b3621;
     width: 900px;
-    height: 85vh;
+    height: 65%;
     display: flex;
     border: 2px solid #753A2280;
     border-radius: 40px;
