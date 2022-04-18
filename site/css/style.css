@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f3f3;
-    font-family:'Red Hat Display';
+    font-family: 'Red Hat Display';
 }
+
 /* Header das telas*/
 
 .header {
@@ -13,9 +14,6 @@ body {
     height: 10vh;
     display: flex;
     align-items: center;
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
 }
 
 .container {
@@ -26,7 +24,7 @@ body {
 .header .container {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
 .navbar {
@@ -40,10 +38,10 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
-}   
+}
 
 .now {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .now_img {
@@ -53,7 +51,7 @@ body {
 }
 
 /* --------------------------- */
- 
+
 /* Banner das telas*/
 
 .banner_simulador {
@@ -78,7 +76,7 @@ body {
 .banner_simulador .container {
     height: 500px;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .banner_simulador .container.simulador {
@@ -86,24 +84,34 @@ body {
 }
 
 .banner_login .contenier.login {
-    margin: auto;    
+    margin: auto;
+}
+
+.banner_cadastro {
+    background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
 }
 
 /* -------------------------------- */
 
 /* Cards das telas */
-/* simulador */
 
+/* simulador */
 .card_simulador {
     background-color: #ffffff;
-    color:#753a22;
+    color: #753a22;
     border: 2px solid #753a22;
     width: 500px;
     height: 550px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 40px;   
+    border-radius: 40px;
 }
 
 .card_simulador h1 {
@@ -126,7 +134,7 @@ body {
     border: 0;
     padding: 8px 8px;
     border-radius: 20px;
-    width: 85%;
+    width: 80%;
     font-size: larger;
 }
 
@@ -140,7 +148,7 @@ body {
     padding: 10px 10px;
     font-size: 18px;
     font-weight: bolder;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .btn_simulador:hover {
@@ -151,7 +159,6 @@ body {
 /* -------------------------------- */
 
 /* login */
-
 .card_login {
     background-color: #ffff;
     color: #753a22;
@@ -180,7 +187,7 @@ body {
     align-self: flex-start;
 }
 
-.input_login{
+.input_login {
     margin-top: 8px;
     outline: 2px solid #753a22;
     background-color: #E5E5E5;
@@ -196,11 +203,84 @@ body {
 
 /* ------------------------- */
 
+/* cadastro */
+.card_cadastro {
+    padding-left: 10px;
+    background-color: #ffffff;
+    color: #4b3621;
+    width: 900px;
+    height: 65%;
+    display: flex;
+    border: 2px solid #753A2280;
+    border-radius: 40px;
+    flex-wrap: wrap;
+}
+
+.cadastro_direito {
+    width: 250px;
+    margin-left: 90px;
+    padding-right: 10px;
+}
+
+.cadastro_esquerdo {
+    width: 300px;
+}
+
+.cadastro_meio {
+    width: 200px;
+}
+
+.titulo_cadastro {
+    width: 900px;
+    height: 50px;
+}
+
+.card_cadastro .input_cadastro {
+    outline: 2px solid #753a22;
+    background-color: #E5E5E5;
+    border: 0;
+    padding: 8px;
+    border-radius: 20px;
+    width: auto;
+    font-size: larger;
+}
+
+#contato_select {
+    font-size: larger;
+    margin-left: 50px;
+    border-radius: 20px #753a22;
+}
+
+.btn_cadastro {
+    margin-top: 60px;
+    margin-left: 70px;
+    background-color: #753a22;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 10px;
+    align-self: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27850b;
+    cursor: pointer;
+}
+
+/* --------------------- */
+
+/* --------------------------------- */
+
 /* Forms das telas */
 
-form{
+form {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 270px;
 }
 
@@ -208,7 +288,7 @@ form label {
     margin: 0;
 }
 
-form input{
+form input {
     outline: 2px solid #753A22;
     border: 0;
     border-radius: 40px;
@@ -219,7 +299,7 @@ form #emailInput {
     margin-bottom: 10px;
 }
 
-form p{
+form p {
     color: #753A22;
     margin-top: 0px;
     text-align: right;
@@ -227,7 +307,7 @@ form p{
     margin-bottom: 25px;
 }
 
-form #entra{
+form #entra {
     border: 3px solid #753A22;
     border-radius: 40px;
     background-color: white;
@@ -238,33 +318,33 @@ form #entra{
     cursor: pointer;
 }
 
-form #entra:hover{
-    background-color:#753a22;
+form #entra:hover {
+    background-color: #753a22;
     border: 3px solid #753A22;
     color: white;
 }
 
-form #cadastro{
+form #cadastro {
     border: 3px solid #87994B;
     border-radius: 40px;
     background-color: white;
     color: #87994B;
     width: 45%;
-    height: 32px;  
+    height: 32px;
     float: right;
     cursor: pointer;
 }
 
-form #cadastro:hover{
-    color:white;
-    background-color:#87994B;
+form #cadastro:hover {
+    color: white;
+    background-color: #87994B;
     cursor: pointer;
 }
 
-.esquecer{
+.esquecer {
     text-decoration: none;
     color: #753a22;
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 /* Footer */
@@ -279,7 +359,7 @@ form #cadastro:hover{
     height: 100px;
     align-items: center;
     justify-content: center;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 /* Output javascrpt*/
@@ -304,21 +384,21 @@ form #cadastro:hover{
     margin: 15px;
 }
 
-.output_resultado .list_js_01{
-    margin: 0; 
+.output_resultado .list_js_01 {
+    margin: 0;
 }
 
-.output_resultado .list_js_02{
-    margin: 0;   
-    list-style: none; 
+.output_resultado .list_js_02 {
+    margin: 0;
+    list-style: none;
     width: 85%;
     padding: 25px 25px;
 }
 
-.output_resultado li{
+.output_resultado li {
     margin: 15px;
     font-weight: bold;
-} 
+}
 
 .output_perda {
     color: #D10007;
@@ -333,13 +413,13 @@ form #cadastro:hover{
 }
 
 .output_ganho {
-    color:#361E0B;
+    color: #361E0B;
     font-weight: bold;
     border-bottom: 1px solid;
 }
 
 .output_estimativa {
-    color:  #2C9A0C;
+    color: #2C9A0C;
     font-weight: bold;
     border-bottom: 1px solid;
 }
@@ -366,91 +446,3 @@ form #cadastro:hover{
     background-color: #87994B;
     cursor: pointer;
 }
-
-/* Cadastro */
-
-
-
-.banner_cadastro {
-    background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 95vh;
-    align-items: center;
-}
-
-.card_cadastro {
-    padding-left: 10px;
-    background-color: #ffffff;
-    color: #4b3621;
-    width: 900px;
-    height: 65%;
-    display: flex;
-    border: 2px solid #753A2280;
-    border-radius: 40px;
-    flex-wrap: wrap;
-    }
-
-.cadastro_direito{
-  
-  width: 250px;
-  margin-left: 90px;
-  padding-right: 10px;
-}
-
-.cadastro_esquerdo{
-    width: 300px;
-}
-
-.cadastro_meio{
-    width: 200px;
-}
-
-.titulo_cadastro {
-     width: 900px;
-    height: 50px;
-}
-
-.card_cadastro .input_cadastro{
-    outline: 2px solid  #753a22;
-    background-color: #E5E5E5;
-    border: 0;
-    padding: 8px;
-    border-radius: 20px;
-    width: auto;
-    font-size: larger;
-}
-
-#contato_select {
-    font-size: larger;
-    margin-left: 50px;
-    border-radius: 20px  #753a22  ;
-}
-
-.btn_cadastro {
-    margin-top: 60px;
-    margin-left: 70px;
-    background-color: #753a22;
-    color: white;
-    width: 50%;
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 10px 10px;
-    align-self: center;
-    font-size: 18px;
-    border: 0;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #27850b;
-    cursor: pointer;
-}
-
-
-
-
-/* ----------------------------------- */
