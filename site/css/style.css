@@ -4,14 +4,16 @@ body {
     background-color: #f7f3f3;
     font-family:'Red Hat Display';
 }
-/* Header*/
+/* Header das telas*/
 
 .header {
     background-color: #753a22;
     color: #FFFFFF;
     border-bottom: 3px solid #361E0B;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
 }
-
 
 .container {
     width: 80%;
@@ -36,6 +38,7 @@ body {
     color: #FFFFFF;
     font-size: 20px;
 }   
+
 .now {
     font-weight:bold;
 }
@@ -48,7 +51,7 @@ body {
 
 /* --------------------------- */
  
-/* Banner */
+/* Banner das telas*/
 
 .banner_simulador {
     background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
@@ -62,17 +65,15 @@ body {
 .banner_login {
     background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
     background-size: cover;
-    width: 100%;
-    height: 600px;
     display: flex;
     justify-content: center;
-
+    width: 100%;
+    height: 600px;
 }
 
 .banner_simulador .container {
     height: 500px;
     display: flex;
-    /* color: white; */
     align-items:center;
 }
 
@@ -83,9 +84,11 @@ body {
 .banner_login .contenier.login {
     margin: auto;    
 }
+
 /* -------------------------------- */
 
-/* Cards  */
+/* Cards das telas */
+/* simulador */
 
 .card_simulador {
     background-color: #ffffff;
@@ -94,23 +97,9 @@ body {
     width: 500px;
     height: 550px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 40px;    
-}
-
-.card_login {
-    background-color: #ffff;
-    color: #753a22;
-    width: 384px;
-    height: 376px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #753A22;
-    border-radius: 40px;
+    border-radius: 40px;   
 }
 
 .card_simulador h1 {
@@ -122,48 +111,79 @@ body {
     margin: 4px;
     margin-left: 40px;
     color: #753a22;
-    font-weight: lighter;
-    font-size: large;
+    font-weight: bold;
     align-self: flex-start;
 }
 
-.card_login h1 {
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 56px;
-    letter-spacing: 0em;
-    margin-top: 0px;
-}
-
-input {
+.input_simulador {
     margin-top: 8px;
     outline: 2px solid #753a22;
     background-color: #E5E5E5;
     border: 0;
-    padding: 8px;
+    padding: 8px 8px;
     border-radius: 20px;
-    width: 80%;
+    width: 85%;
     font-size: larger;
 }
 
-.button_simulador {
-    margin-top: 60px;
-    background-color: #753a22;
-    color: white;
-    width: 50%;
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 10px 10px;
-    align-self: center;
-    font-size: 18px;
-    border: 0;
+.btn_simulador {
+    margin-top: 50px;
+    color: #753a22;
+    background-color: #ffffff;
+    border: 2px solid #753a22;
     border-radius: 20px;
+    width: 40%;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bolder;
     cursor:pointer;
 }
 
-button:hover{
+.btn_simulador:hover {
     background-color: #87994B;
     cursor: pointer;
+}
+
+/* -------------------------------- */
+
+/* login */
+
+.card_login {
+    background-color: #ffff;
+    color: #753a22;
+    width: 390px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #753A22;
+    border-radius: 40px;
+}
+
+.card_login h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: 0em;
+    margin: 0;
+}
+
+.card_login h4 {
+    margin: 0;
+    color: #753a22;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.input_login{
+    margin-top: 8px;
+    outline: 2px solid #753a22;
+    background-color: #E5E5E5;
+    padding: 8px 8px;
+    border-radius: 20px;
+    width: 95%;
+    font-size: larger;
 }
 
 .resultado {
@@ -172,7 +192,7 @@ button:hover{
 
 /* ------------------------- */
 
-/* Login */
+/* Forms das telas */
 
 form{
     display: flex;
@@ -181,19 +201,18 @@ form{
 }
 
 form label {
-    margin-top: 8px;
+    margin: 0;
 }
 
 form input{
     outline: 2px solid #753A22;
     border: 0;
-    padding: 10px; 
     border-radius: 40px;
     width: 95%;
 }
 
 form #emailInput {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 form p{
@@ -209,7 +228,7 @@ form #entra{
     border-radius: 40px;
     background-color: white;
     color: #753a22;
-    width: 50%;
+    width: 45%;
     height: 32px;
     text-align: center;
     cursor: pointer;
@@ -226,22 +245,23 @@ form #cadastro{
     border-radius: 40px;
     background-color: white;
     color: #87994B;
-    width: 120px;
+    width: 45%;
     height: 32px;  
     float: right;
     cursor: pointer;
 }
+
 form #cadastro:hover{
     color:white;
     background-color:#87994B;
     cursor: pointer;
 }
+
 .esquecer{
     text-decoration: none;
     color: #753a22;
     margin-top:3px;
 }
-
 
 /* Footer */
 
@@ -273,12 +293,28 @@ form #cadastro:hover{
 .output_resultado {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.output_resultado p {
-    margin: 20px;
-    font-weight: 700;
+.titulo_js {
+    margin: 15px;
 }
+
+.output_resultado .list_js_01{
+    margin: 0; 
+}
+
+.output_resultado .list_js_02{
+    margin: 0;   
+    list-style: none; 
+    width: 85%;
+    padding: 25px 25px;
+}
+
+.output_resultado li{
+    margin: 15px;
+    font-weight: bold;
+} 
 
 .output_perda {
     color: #D10007;
@@ -310,92 +346,19 @@ form #cadastro:hover{
     border-bottom: 1px solid;
 }
 
-
-
-
-
-/* Cadastro */
-
-
-
-.banner_cadastro {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 600px;
-    padding-top: 5px;
-}
-
-.card_cadastro {
-    padding-left: 10px;
+.btn_js_simulador {
+    margin-top: 10px;
+    color: #753a22;
     background-color: #ffffff;
-    color: #4b3621;
-    width: 900px;
-    height: 525px;
-    display: flex;
-    border: 2px solid #753A2280;
-    border-radius: 40px;
-    flex-wrap: wrap;
-    }
-
-.cadastro_direito{
-  
-  width: 250px;
-  margin-left: 90px;
-  padding-right: 10px;
-}
-
-.cadastro_esquerdo{
-    width: 300px;
-}
-
-.cadastro_meio{
-    width: 200px;
-}
-
-.titulo_cadastro {
-     width: 900px;
-    height: 50px;
-}
-
-.card_cadastro .input_cadastro{
-    outline: 2px solid  #753a22;
-    background-color: #E5E5E5;
-    border: 0;
-    padding: 8px;
+    border: 2px solid #753a22;
     border-radius: 20px;
-    width: auto;
-    font-size: larger;
-}
-
-#contato_select {
-    font-size: larger;
-    margin-left: 50px;
-    border-radius: 20px  #753a22  ;
-}
-
-.btn_cadastro {
-    margin-top: 60px;
-    margin-left: 70px;
-    background-color: #753a22;
-    color: white;
-    width: 50%;
-    border-radius: 10px;
-    font-size: 18px;
+    width: 40%;
     padding: 10px 10px;
-    align-self: center;
     font-size: 18px;
-    border: 0;
-    border-radius: 20px;
-    cursor: pointer;
+    font-weight: bolder;
 }
 
-button:hover {
-    background-color: #27850b;
+.btn_js_simulador:hover {
+    background-color: #87994B;
     cursor: pointer;
 }
-
-
-
-
-/* ----------------------------------- */
