@@ -8,6 +8,7 @@
     <title>Simulador Financeiro</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imgs/site-institucional/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -31,10 +32,13 @@
         <div class="container simulador">
             <div class="card_simulador" id="container_output">
                 <h1>Calculadora Financeira</h1>
-                <h4>Quantidade total de plantas de café</h4> <input type="text" id="qnt_total_planta"><br><br>
-                <h4>Quantidade total de sacas produzidas</h4> <input type="text" id="qnt_total_sacas"><br><br>
-                <h4>Valor da saca</h4> <input type="number" id="preco_saca">
-                <button class="button_simulador" onclick="calcular()">Calcular</button>
+                <h4>Quantidade total de cafeeiros</h4>
+                <input class="input_simulador" type="number" id="input_qnt_cafeeiro"><br><br>
+                <h4>Quantidade total de sacas produzidas</h4>
+                <input class="input_simulador" type="number" id="input_qnt_sacas"><br><br>
+                <h4>Valor de cada saca</h4>
+                <input class="input_simulador" type="number" id="input_preco_saca">
+                <button class="btn_simulador" onclick="calcular()">Calcular</button>
                 <div id="resultado"></div>
             </div>
         </div>
