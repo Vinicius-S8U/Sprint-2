@@ -362,3 +362,90 @@ form #cadastro:hover{
     background-color: #87994B;
     cursor: pointer;
 }
+
+/* Cadastro */
+
+
+
+.banner_cadastro {
+    background-image: url(./../imgs/site-institucional/Grao-de-cafe.jpg);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5px;
+}
+
+.card_cadastro {
+    padding-left: 10px;
+    background-color: #ffffff;
+    color: #4b3621;
+    width: 900px;
+    height: 85vh;
+    display: flex;
+    border: 2px solid #753A2280;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    }
+
+.cadastro_direito{
+  
+  width: 250px;
+  margin-left: 90px;
+  padding-right: 10px;
+}
+
+.cadastro_esquerdo{
+    width: 300px;
+}
+
+.cadastro_meio{
+    width: 200px;
+}
+
+.titulo_cadastro {
+     width: 900px;
+    height: 50px;
+}
+
+.card_cadastro .input_cadastro{
+    outline: 2px solid  #753a22;
+    background-color: #E5E5E5;
+    border: 0;
+    padding: 8px;
+    border-radius: 20px;
+    width: auto;
+    font-size: larger;
+}
+
+#contato_select {
+    font-size: larger;
+    margin-left: 50px;
+    border-radius: 20px  #753a22  ;
+}
+
+.btn_cadastro {
+    margin-top: 60px;
+    margin-left: 70px;
+    background-color: #753a22;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 10px;
+    align-self: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27850b;
+    cursor: pointer;
+}
+
+
+
+
+/* ----------------------------------- */
