@@ -49,15 +49,17 @@
 
   <section id="section1_dash">
 
-    <!-- Divs ocupando 50% width da tela com 1 grafico e 2 balão em column -->
+    <!-- Divs ocupando 50% height da tela com 1 grafico e 2 balão-->
 
-    <div class="paidosg">
+    <div class="div_pai_dash">
 
-      <div id="div_grafico">
+      <div class="div_grafico">
 
         <canvas id="GraficoP" height="100%"></canvas>
 
       </div>
+     
+      <div class="Pai_Situacao">
 
       <div class="Situação_Grafico2">
         <span id="Temp_atual">Temperatura atual do Sensor: <b>20.7</b></span>
@@ -68,18 +70,22 @@
         <span id="Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
         <br>
 
-
         <br>
         <span id="Condicao_sensor"> Condição da conexão: <b>Estável</b></span>
 
       </div>
 
+     </div>
+
+
     </div>
 
-    <!-- Divs ocupando 50% width da tela com 1 grafico e 2 balão em column -->
+    <!-- Divs ocupando 50% height da tela com 1 grafico e 2 balão em column -->
 
-    <div id="div_pai_dash">
+    <div class="div_pai_dash">
 
+    <div class="Pai_Situacao2">
+    
       <div class="Situação_Grafico2">
 
         <span id="Umi_atual">Umidade atual do Sensor: <b>79.3</b></span>
@@ -96,7 +102,10 @@
         <span id="Condicao_sensor"> Condição da conexão: <b>Estável</b></span>
       </div>
 
-      <div class="Grafico_Principal">
+    </div>
+
+
+      <div class="div_grafico">
         <canvas id="GraficoU" height="100%"></canvas>
       </div>
     </div>
