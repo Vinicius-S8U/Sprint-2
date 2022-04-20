@@ -106,13 +106,13 @@ img{
     display:flex;
     color:white;
     width: 539px;
+    float:right;
 }
 
 .slogan p{
     font-size: 40px;
     font-weight: bolder;
-    margin-top:22%;
-    margin-left:25%;
+    margin-top:25%;
 }
 
 /*Tela 2*/

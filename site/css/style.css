@@ -152,7 +152,9 @@ body {
 }
 
 .btn_simulador:hover {
+    border: 2px solid #87994B;
     background-color: #87994B;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -189,12 +191,14 @@ body {
 
 .input_login {
     margin-top: 8px;
+    margin-bottom: 6px;
     outline: 2px solid #753a22;
     background-color: #E5E5E5;
     padding: 8px 8px;
     border-radius: 20px;
     width: 95%;
     font-size: larger;
+    text-align:center;
 }
 
 .resultado {
@@ -207,7 +211,7 @@ body {
 .card_cadastro {
     padding-left: 10px;
     background-color: #ffffff;
-    color: #4b3621;
+    color: #753a22;
     width: 900px;
     height: 65%;
     display: flex;
@@ -268,7 +272,9 @@ body {
 }
 
 button:hover {
-    background-color: #27850b;
+    border: 2px solid #87994B;
+    background-color: #87994B;
+    color: #ffffff;
     cursor: pointer;
 }
 
