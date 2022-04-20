@@ -5,36 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Entrar</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imgs/site-institucional/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-        <div class="header">
-            <div class="container">
-                <h1>E-Coffee</h1>
-                <ul class="navbar">
-                    <li><a href="./inicio.html">Início</a></li>
-                    <li><a href="./simulador.html">Simulador</a></li>
-                    <li><a class="now" href="./login.html"><img src="../imgs/grao-de-cafe.png" class="now_img">Login</a></li>
-                    <li><a href="./cadastro.html">Cadastro</a></li>
-                </ul>
-            </div>
+    <div class="header">
+        <div class="container">
+            <img src="./../imgs/logo-ofc.png" height="30px">
+            <ul class="navbar">
+                <li><a href="./inicio.html">Início</a></li>
+                <li><a href="./simulador.html">Simulador</a></li>
+                <li><a class="now" href="./login.html"><img src="../imgs/grao-de-cafe.png" class="now_img">Entrar</a>
+                </li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+            </ul>
         </div>
-        <div class="banner_login">
-            <div class="contenier login">
-                <div class="card_login">
-                    <h1>Entrar</h1>
-                    <form>
+    </div>
+    <div class="banner_login">
+        <div class="contenier login">
+            <div class="card_login">
+                <h1>Entrar</h1>
+                <form>
+                    <h4>E-mail:</h4>
                     <label for="emailInput"></label>
-                    <input type="text" id="emailInput" placeholder="Email">
+                    <input class="input_login" type="text" id="emailInput" placeholder="Digite seu e-mail">
+                    <h4>Senha:</h4>
                     <label for="senhaInput"></label>
-                    <input type="password'" id="senhaInput" placeholder="Senha">
-                    <p ><a href="#" class="esquecer">Esqueceu a senha?</p></a>
+                    <input class="input_login" type="password'" id="senhaInput" placeholder="Digite sua senha">
+                    <p><a href="#" class="esquecer">Esqueceu a senha?</p></a>
                     <div class="button_login" id="button-container">
                         <button id="entra" type="button">
                             Entrar

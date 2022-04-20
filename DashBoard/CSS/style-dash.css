@@ -1,0 +1,281 @@
+body{
+ margin: 0px;
+ padding: 0px;
+ background-color: #fbf8f9;
+ font-family: 'Red Hat Display', sans-serif; 
+}
+
+/* Header e seus elementos */
+.header_dash{ 
+display: flex;
+border-bottom: solid 3px #361E0B;
+height:85px;
+background-color: #753a22;
+}
+
+
+.titulo_dash{
+  color: #753a22;
+ 
+}
+
+.container_dash{
+ display: flex;
+ height: 85px;
+ width: 95%;
+ margin: auto;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+
+#logo_dash{
+  height: 40px;
+  width: auto;
+  margin-bottom: 15%;
+  margin: auto;
+}
+
+#user_icon{
+ height: 40px;
+}
+
+#menu_icon{
+ height: 35px;   
+}
+
+/* Titulo da dash e select */
+
+#barra_dash{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:90%;
+  margin: auto;
+  border-bottom: 0.1px solid #753a22;
+  font-size: 24px;
+}
+
+
+
+.select_dash{
+  height: 35px;
+  border-radius: 40px;
+}
+  
+
+
+/* Secção 1 da pagina (Gráficos e "monitores de desempenho") */
+
+#section1_dash{
+height: 70vh;
+width: 90%;
+display: flex;
+margin: auto;
+margin-top: 4%;
+flex-direction: column;
+
+}
+
+
+.div_pai_dash{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+
+.div_grafico{
+  height: 100%;
+  width: 65%; 
+  padding: 1%;
+  border: solid 3px #976B59;
+  border-radius: 40px;
+  background-color: #ffff;
+   
+}
+
+
+.Pai_Situacao{
+  height: 70%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Pai_Situacao2{
+  height: 70%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.Situação_Grafico{
+  height: 40%;
+  width: 250px;
+
+  background-color: #ffff;
+ 
+  border:solid 3px #976B59;
+  border-radius: 40px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.Situação_Grafico2{
+  height: 40%;
+  width: 250px;
+
+  background-color: #ffff;
+  
+  border:solid 3px #976B59;
+  border-radius: 40px;
+  padding: 30px;
+ 
+  display: flex;
+  align-items: center;
+  margin-bottom: 12%;
+}
+
+
+
+
+
+/* Botões do header */
+
+#menuUser{
+ display: none;
+ position: fixed;
+ z-index: 9999;
+ right: 0%;
+ top: 7.5vh;
+ width: 22vh;
+ height: 20vh;
+ background-color: #753a22;
+ border-radius: 20px;
+ 
+}
+
+#menuUser .content_user{
+
+  background-color: #ffff;
+ 
+  margin: 7%;
+  border-radius: 20px;
+  width: 85%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#Funcionalidade{
+display: none;
+position: fixed;
+z-index: 9999;
+left: 0%;
+top: 8.5vh;
+width: 20vh;
+height: 100vh;
+background-color: #753a22;
+
+}
+
+#Funcionalidade .content_func{
+
+background-color: #f9f7f7;
+margin: 15% auto;
+padding: 25px;
+border-radius: 5px;
+width: 70%;
+height: auto;
+
+opacity: 90%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+border:solid 2px radius;
+border-radius: 240px;
+
+}
+
+
+/* Titulo Relatorio e Select */
+
+#Titulo_h2{
+height: 100px;
+width: 90%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 10%;
+border-bottom:solid 0.1px #753a22;
+align-items: center;
+font-size: 24px;
+}
+
+#Titulo_h2 h2{
+  color:#753a22;
+}
+
+
+
+/* secção 2 da pagina (relatório) */
+
+
+
+#section2_dash{
+height: 30vh;
+width: 90%;
+display: flex;
+margin: auto;
+justify-content: space-between;
+align-items: center;
+}
+
+#RelatorioAlertas{
+  background-color: #ffff;
+  height: 175px;
+  width: 325px;
+  border: 3px solid #976B59;
+  border-radius: 40px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.relatorio{
+  height: 150px;
+  width: 325px;
+  border: 3px solid #976B59;
+  border-radius: 40px;
+  background-color:#ffff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ }
+ 
+ .relatorio p{
+  font-weight: bolder
+ }
+
