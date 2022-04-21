@@ -22,8 +22,6 @@
   <header class="header_dash">
     <div class="container_dash">
 
-      <input type="image" src="./../DashBoard/img/options.png" id="menu_icon" onclick="menuFunction()">
-
       <img src="img/imagem_2022-04-14_234004436-removebg-preview.png" id="logo_dash">
 
       <input type="image" src="img/user.png" id="user_icon" onclick="userFunction()">
@@ -58,25 +56,24 @@
         <canvas id="GraficoP" height="100%"></canvas>
 
       </div>
-     
+
       <div class="Pai_Situacao">
 
-      <div class="Situação_Grafico2">
-        <span id="Temp_atual">Temperatura atual do Sensor: <b>20.7</b></span>
+        <div class="Situação_Grafico2">
+          <span id="Temp_atual">Temperatura atual do Sensor: <b>20.7</b></span>
+        </div>
+
+        <div class="Situação_Grafico">
+
+          <span id="Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
+          <br>
+
+          <br>
+          <span id="Condicao_sensor"> Condição da conexão: <b>Estável</b></span>
+
+        </div>
+
       </div>
-
-      <div class="Situação_Grafico">
-
-        <span id="Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
-        <br>
-
-        <br>
-        <span id="Condicao_sensor"> Condição da conexão: <b>Estável</b></span>
-
-      </div>
-
-     </div>
-
 
     </div>
 
@@ -84,25 +81,25 @@
 
     <div class="div_pai_dash">
 
-    <div class="Pai_Situacao2">
-    
-      <div class="Situação_Grafico2">
+      <div class="Pai_Situacao2">
 
-        <span id="Umi_atual">Umidade atual do Sensor: <b>79.3</b></span>
+        <div class="Situação_Grafico2">
+
+          <span id="Umi_atual">Umidade atual do Sensor: <b>79.3</b></span>
+
+        </div>
+
+        <div class="Situação_Grafico">
+
+          <span id="Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
+          <br>
+
+
+          <br>
+          <span id="Condicao_sensor"> Condição da conexão: <b>Estável</b></span>
+        </div>
 
       </div>
-
-      <div class="Situação_Grafico">
-
-        <span id="Situacao_sensor">Situação do seu sensor: <b>Ativo</b></span>
-        <br>
-
-
-        <br>
-        <span id="Condicao_sensor"> Condição da conexão: <b>Estável</b></span>
-      </div>
-
-    </div>
 
 
       <div class="div_grafico">
@@ -130,10 +127,6 @@
 
   <section id="section2_dash">
 
-
-
-
-
     <div id="RelatorioAlertas">
       <h3 id="qtd_alertas">Você teve 18 alertas pertinentes</h3>
 
@@ -148,7 +141,6 @@
       <span id="alerta5">Você teve 4 outros alertas </span>
 
     </div>
-
 
     <div class="relatorio">
       <span id="Temp_min">
@@ -177,27 +169,17 @@
 
   </section>
 
-
   <!-- Menu vertical no botão de user  e no botão menu -->
 
-  <div id="menuUser">
-    <div class="content_user">
-      Username:BigShu<br>
-
-      <br>Email:hahhfd@gmail.com<br>
-
-
-      <br><a href="">Deslogar</a>
-
-    </div>
-  </div>
-
-  <div id="Funcionalidade">
-    <div class="content_func">
-      <a href=""> Principal</a>
-      <a href=""> Secundário </a>
-
-    </div>
+  <div class="menu_usuario" id="menu_usuario">
+    <span class="nome_usuario">BigShu</span><br>
+      <ul class="user_bar">
+        <li> <a href=""> Configurações</a> </li>
+        <li> <a href=""> Adicionar Usuário</a> </li>
+        <li> <a href=""> Visão Geral </a></li>
+        <li> <a href=""> Ajuda </a></li>
+        <li> <a href=""> Sair </a></li>
+      </ul>
   </div>
 
 

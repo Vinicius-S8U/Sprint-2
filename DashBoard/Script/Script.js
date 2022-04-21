@@ -3,7 +3,7 @@
 
 function userFunction(){
 
-MenuUserI = document.getElementById("menuUser")
+MenuUserI = document.getElementById("menu_usuario")
 
 if(MenuUserI.style.display == "none"){
     MenuUserI.style.display = "block"
@@ -13,17 +13,6 @@ else{
 }
 }
 
-function menuFunction(){
-
-menuFunc = document.getElementById("Funcionalidade")
-
-if(menuFunc.style.display == "none"){
-    menuFunc.style.display = "block"
-}
-else{
-    menuFunc.style.display = "none"  
-}
-}
 
 /* função dos selects de mudar o valor da span do relatorio  */
 
@@ -52,7 +41,7 @@ else{
   alerta1.innerHTML = `Você teve 6 alerta às 12:00`
   alerta2.innerHTML = `Você teve 2 alerta às 02:00`
   alerta3.innerHTML = `Você teve 4 alerta às 01:00`
-    alerta4.innerHTML = `Você teve 2 alerta às 04:00`
+  alerta4.innerHTML = `Você teve 2 alerta às 04:00`
   alerta5.innerHTML = `Você teve 4 outros alerta`
 }
 
